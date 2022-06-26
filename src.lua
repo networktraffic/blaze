@@ -1,4 +1,5 @@
 local job_queue = { }
+local plrs_serv = game:GetService( 'Players' )
 
 local function create( class, parent, props )
 	local obj = Instance.new( class, parent )
@@ -10,7 +11,6 @@ local function create( class, parent, props )
 	return obj
 end
 
-local plrs_serv = game:GetService( 'Players' )
 local container = create( 'Frame', create('ScreenGui', gethui and gethui( ) or game:GetService( 'Players' ).LocalPlayer:WaitForChild( 'PlayerGui' ), {
     Name = math.random( ),
     ResetOnSpawn = false

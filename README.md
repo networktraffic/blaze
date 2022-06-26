@@ -9,6 +9,6 @@ notify( <string> text, <Color3> color, <number> expiration )
 
 # exploit environment usage
 ```lua
-local notify = loadstring( game:HttpGetAsync( 'https://raw.githubusercontent.com/networktraffic/blaze/master/src.lua' ) )( )
+local notify = loadstring( game:HttpGetAsync( 'https://raw.githubusercontent.com/networktraffic/blaze/main/src.lua' ) )( )
 notify( 'hello world', Color3.new( 1, 1, 1 ), 3 )
 ```

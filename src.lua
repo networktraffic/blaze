@@ -11,7 +11,7 @@ local function create( class, parent, props )
 	return obj
 end
 
-local container = create( 'Frame', create('ScreenGui', gethui and gethui( ) or game:GetService( 'Players' ).LocalPlayer:WaitForChild( 'PlayerGui' ), {
+local container = create( 'Frame', create( 'ScreenGui', gethui and gethui( ) or game:GetService( 'Players' ).LocalPlayer:WaitForChild( 'PlayerGui' ), {
     Name = math.random( ),
     ResetOnSpawn = false
 } ), {
